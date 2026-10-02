@@ -423,3 +423,17 @@ a { text-underline-offset: 0.18em; }
 .subpage-cards a:hover { border-color: var(--brand-deep); background: var(--brand-tint); }
 .subpage-title { display: block; font-size: 17px; font-weight: 700; color: var(--brand-deep); text-decoration: underline; }
 .subpage-summary { text-decoration: none; display: block; margin-top: var(--space-1); font-size: 15px; line-height: 1.7; font-weight: 400; color: var(--ink); }
+
+/* 旧サイトの院名ロゴと、トップの病院外観写真を活かす（画像は assets/ を参照） */
+.brand-logo { display: block; height: 44px; width: auto; }
+.hero { background: #b6e1fa url(../../assets/wp-content/themes/original/img/home/main3.jpg) center bottom / cover no-repeat; }
+.hero-inner { align-items: start; padding-top: var(--space-7); padding-bottom: 210px; }
+@media (max-width: 899px) {
+  .hero { background-size: 1100px auto; }
+  .hero-inner { padding-bottom: 190px; }
+}
+@media (max-width: 720px) {
+  .brand-logo { height: 38px; }
+  .hero { background-size: 900px auto; }
+  .hero-inner { padding-top: var(--space-6); padding-bottom: 170px; }
+}
